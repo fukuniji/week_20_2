@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Try SWAPI</title>
+        <link rel="stylesheet" href="./style/style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="wr-search">
+                <h1 class="title">Star<br />Wars</h1>
+                <h2>Who or what are you looking for?</h2>
+                <select name="request-options" id="request-options">
+                    <option value="" hidden>Please choose from the list</option>
+                    <option value="people">People</option>
+                    <option value="films">Films</option>
+                    <option value="starships">Starships</option>
+                    <option value="vehicles">Vehicles</option>
+                    <option value="species">Species</option>
+                    <option value="planets">Planets</option>
+                </select>
+                <input
+                    type="number"
+                    min="1"
+                    max="10"
+                    id="request-id"
+                    placeholder="1 to 10"
+                />
+                <button class="button" id="searchBtn">Search</button>
+            </div>
+            <div class="wr-result">
+                <div id="loader" class="loader"></div>
+                <div id="result"></div>
+                <div id="error"></div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

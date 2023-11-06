@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), local("Poppins-Regular"), url("../assets/fonts/Poppins-Regular.woff") format("woff"), url("../assets/fonts/Poppins-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins SemiBold"), local("Poppins-SemiBold"), url("../assets/fonts/Poppins-SemiBold.woff") format("woff"), url("../assets/fonts/Poppins-SemiBold.ttf") format("ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Starjedi";
+  src: local("Starjedi"), local("Starjedi"), url("../assets/fonts/Starjedi.woff") format("woff"), url("../assets/fonts/Starjedi.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 4.1vw;
+  color: #c8c8c8;
+  background-color: #1c1e22;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9vw;
+}
+
+.title {
+  font-family: "Starjedi";
+  font-weight: 400;
+  line-height: 100%;
+  text-align: left;
+  color: #ffe300;
+}
+
+input,
+select {
+  font-family: "Poppins";
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+.button {
+  font-family: "Poppins";
+  background-color: #ffe300;
+  border: 2px solid #ffe300;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.9s;
+}
+.button:hover {
+  background-color: #31353a;
+  border: 2px solid #ffe300;
+  color: #fff;
+  transition: background-color 0.5s;
+}
+
+.loader {
+  display: none;
+  border: 8px solid #c8c8c8;
+  border-top: 8px solid #ffe300;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (min-width: 768px) {
+  html,
+  .button,
+  input,
+  select {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  html,
+  .button,
+  input,
+  select {
+    font-size: 1.5vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  html,
+  .button,
+  input,
+  select {
+    font-size: 1.25vw;
+  }
+}
+@media screen and (min-width: 1600px) {
+  html,
+  .button,
+  input,
+  select {
+    font-size: 0.75vw;
+  }
+}/*# sourceMappingURL=style.css.map */
